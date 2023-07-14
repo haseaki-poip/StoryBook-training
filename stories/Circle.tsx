@@ -1,7 +1,15 @@
 import React, { useMemo } from "react";
 
-type Props = { variant: "orange" | "green" | "yellow" };
+type Props = {
+  // 以下のコメントがドキュメントに含まれる
+  /**　色の種類　*/
+  variant: "orange" | "green" | "yellow";
+};
 
+// 以下のコメントがドキュメントに含まれる
+/**
+ * 円のデザイン
+ */
 const Circle = ({ variant }: Props) => {
   const bgColor = useMemo(() => {
     switch (variant) {

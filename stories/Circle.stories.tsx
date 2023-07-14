@@ -14,16 +14,28 @@ const meta: Meta<typeof Circle> = {
 
 export default meta;
 
+// 以下のコメントがドキュメントに含まれる
+/**
+ * オレンジ色
+ */
 export const BaseCircle = {
   args: {
     variant: "orange",
   },
 };
+
+/**
+ * 緑色
+ */
 export const GreenCircle = {
   args: {
     variant: "green",
   },
 };
+
+/**
+ * 黄色
+ */
 export const YellowCircle = {
   args: {
     variant: "yellow",
@@ -31,7 +43,9 @@ export const YellowCircle = {
 };
 
 type Story = StoryObj<typeof meta>;
-
+/**
+ * 3色
+ */
 export const GroupedCircle: Story = {
   render: () => (
     <div>
